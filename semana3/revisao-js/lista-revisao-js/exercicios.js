@@ -12,24 +12,41 @@
 // console.log(array)
 
 // EXERCÍCIO 02
-function retornaArrayInvertido(array) {
-    return array.reverse()
+// function retornaArrayInvertido(array) {
+//     return array.reverse()
    
-}
-const arrayInvertido = [0, 8, 23, 16, 10, 15, 41, 12, 13]
-console.log(arrayInvertido.reverse()) 
-
-
+// }
+// const arrayInvertido = [0, 8, 23, 16, 10, 15, 41, 12, 13]
+// console.log(arrayInvertido.reverse()) 
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
-}
 
-// EXERCÍCIO 04
+    array.sort(function(a, b) {
+        return a - b;
+      });
+    return array
+   
+        }
+         arrayOrdenado = [36,12,56,7,3]
+        console.log(arrayOrdenado)
+      
+   // EXERCÍCIO 04
 function retornaNumerosPares(array) {
   
-}
+//     const numerosPares = [0,1,2,3,4,5,6,7,8,9]
+//     for (let i = 0; numerosPares.length < array; i += 2) {
+//                 numerosPares.push(i)
+//         }
+    
+//     return numerosPares;
+// }
+ 
+ 
+//  console.log(retornaNumerosPares()).push()
+
+
+
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
