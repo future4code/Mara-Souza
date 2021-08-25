@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Adicionar Produto</title>
+    <style>
+        .texto-rosa{
+            color: palevioletred;
+            padding-bottom: 10px 0;
+            margin-top: 10px 0;
+        }
+
+        .texto-roxo{
+            color: cornflowerblue;
+            padding-bottom: 10px;
+            margin-top: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><p class="texto-rosa">Beautiful and Care</p></h1>
+        </div>
+    
+    <div><p class="texto-roxo"></p>
+        <a href="">Página Inicial</a>
+        <a href="">Controle de Estoque</a>
+        <a href="">Adicionar Produto</a>
+        <a href="">Funcionários</a>
+    </div>
+
+    
+    <h2><p class="texto-rosa">Adicionar Produto</p></h2>
+    <form action="">
+        <div>
+            <label for="link-foto"><h4><p class="texto-roxo">Link para Foto:</p></h4></label>
+            <input type="url" id="link-foto" name="link-foto">
+        </div>
+        
+        <div>
+            <label for="descricao"><h4><p class="texto-roxo">Descrição do Produto:</p></h4></label>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <input type="text" id="descricao" name="Descricao">
+        </div>
+        
+        <div>
+            <label for="preco"><h4><p class="texto-roxo">Descrição do Produto:</p></h4>Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="preco" name="Preço">
+        </div>
+        
+        <div>
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label for="quantidade"><h4><p class="texto-roxo">Descrição do Produto:</p></h4>Quantidade disponível: </label>
+            <input type="number" id="quantidade" name="Quantidade Disponivel">
+        </div>
+
+        <div class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+           <form>
+            <label for="nome">Nome: </label>
+            <input type="text" placeholder="Insira seu Nome" id="nome">
+            <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+    </form>
+
+</body>
+</html>
