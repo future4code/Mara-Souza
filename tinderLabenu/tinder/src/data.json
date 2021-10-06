@@ -1,0 +1,34 @@
+[
+    {
+    
+      "id": 0,
+      "name": "Bob Esponja",
+      "age": 26,
+      "image": "BobEsponja.jpg",
+      "bio": "Gosto de caçar Aguas-vivas"
+    
+    },
+
+    {
+    
+        "id": 1,
+        "name": "Patrick",
+        "age": 26,
+        "image": "Patrick.jpg",
+        "bio": "Gosto da cia. do meu melhor amigo Bob Esponja"
+      
+      },
+
+      {
+    
+        "id": 2,
+        "name": "Sandy",
+        "age": 26,
+        "image": "Patrick.jpg",
+        "bio": "Gosto da cia. do meu melhor amigo Bob Esponja"
+      
+      }
+  
+
+
+]
