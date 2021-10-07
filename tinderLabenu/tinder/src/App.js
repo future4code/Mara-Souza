@@ -10,22 +10,56 @@ const App = () => {
   const [likedUsers, setLikedUsers] = useState([]);
   const [superLikedUsers, setSuperLikedUsers] = useState([]);
   const [dislikedUsers, setDislikedUsers] = useState([]);
-
   const activeUser = 0;
 
-switch (action) {
-  case 'ADD_OS_LIKES_USUARIOS':
-    break;
+  const removedPersonFromDataSrc = (peopleSource, userId) => 
+  peopleSource.filter(user => user.id !== userId)
 
-    case 'ADD_OS_DISLIKES_USUARIOS':
-    break;
+  
 
-    case 'ADD_OS_SUPERLIKES_USUARIOS':
-    break;
+  const modifySuperficialChoices = (userId, action) => {
+    const newPeople = [...people]
+    const newLikedUsers = [...likedUsers]
+    const newSuperLikedUsers = [...superLikedUsers]
+    const newDislikedUsers = [...dislikedUsers]
+  
 
-    default:
-      return people;
-}
+    switch (action) {
+      case 'ADD_OS_LIKES_USUARIOS':
+        if(!people[activeUser].likedUsers.includes(userId)) {
+          newPeople[activeUser].likedUsers.push(userId)
+
+          setLikedUsers(newLikedUsers)
+          setPeople(removedPersonFromDataSrc(people, userId))
+          
+        }
+        break;
+ 
+        case 'ADD_OS_DISLIKES_USUARIOS':
+          if(!people[activeUser].dislikedUsers.includes(userId)) {
+            newPeople[activeUser].dislikedUsers.push(userId)
+            newDislikedUsers.push(data[userId])
+
+            setDislikedUsers(newLikedUsers)
+            setPeople(removedPersonFromDataSrc(people, userId))
+            
+          }
+        break;
+
+        case 'ADD_OS_SUPERLIKES_USUARIOS':
+          if(!people[activeUser].superLikedUsers.includes(userId)) {
+            newPeople[activeUser].superLikedUsers.push(userId)
+            newSuperLikedUsers.push(data[userId])
+  
+            superLikedUsers(newLikedUsers)
+            setPeople(removedPersonFromDataSrc(people, userId))
+            
+          }
+          break;
+          default:
+          return people;
+    }
+    }
 
   return (
     <div className="app">
@@ -33,7 +67,7 @@ switch (action) {
 
       {people[1] ? (
         <Person
-        key={Person[1].id}
+        key={people[1].id}
         Person={people[1]}
         modifySuperficialChoices={modifySuperficialChoices}
         likedUsers={likedUsers}
@@ -47,6 +81,6 @@ switch (action) {
       )}
     </div>
   )
-} ;
+      }
 
-export default App;
+  export default App;

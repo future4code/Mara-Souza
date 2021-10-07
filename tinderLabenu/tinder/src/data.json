@@ -12,8 +12,8 @@
     {
     
         "id": 1,
-        "name": "Patrick",
-        "age": 26,
+        "name": "Patrick Estrela",
+        "age": 37,
         "image": "Patrick.jpg",
         "bio": "Gosto da cia. do meu melhor amigo Bob Esponja"
       
@@ -22,10 +22,10 @@
       {
     
         "id": 2,
-        "name": "Sandy",
-        "age": 26,
+        "name": "Sandy Bochechas",
+        "age": 22,
         "image": "Patrick.jpg",
-        "bio": "Gosto da cia. do meu melhor amigo Bob Esponja"
+        "bio": "Gosto de explora a Vida Marinha"
       
       }
   
