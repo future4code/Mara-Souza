@@ -1,11 +1,19 @@
 import React from 'react'
+import logo from '../../assets/CHICHET.jpg'
+import {ScreenContainer} from './styled'
+import SignUpForm from './SignUpForm'
+import { LogoImage } from './styled'
+import useUnProtectedPage from '../../hooks/useUnprotectedPage'
 
 const SignUpPage = () => {
+    useUnProtectedPage()
     return (
-        <div>
-            <h1>SignUpPage</h1>
-        </div>
-    )
+    <ScreenContainer>
+        <LogoImage src={logo}/>
+        <SignUpForm/>
+    </ScreenContainer>
+        )
+
 }
 
 export default SignUpPage

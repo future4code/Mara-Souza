@@ -6,14 +6,15 @@ import LoginPages from '../pages/LoginPages/LoginPages'
 import RecipeDetailPage from '../pages/RecipeDetailPage/RecipeDetailPage'
 import RecipeListPage from '../pages/RecipeListPage/RecipeListPage'
 import SignUpPage from '../pages/SignUpPage/SignUpPage'
- 
+ import Header from '../components/header/Header'
 
 const Router = () => {
     return (
         <BrowserRouter>
+        <Header/>
         <Switch>
                    
-        <Route exact path="/login">
+        <Route exact path="/">
                 <LoginPages/>
             </Route>
 
@@ -29,7 +30,7 @@ const Router = () => {
                 <RecipeDetailPage/>
             </Route>
 
-            <Route exact path="/">
+            <Route exact path="/Login">
                 <RecipeListPage/>
             </Route>          
 

@@ -1,6 +1,10 @@
 import React from 'react'
+import useProtectedPage from '../../hooks/useProtectedPage'
 
-const  AddFeedPage = () => {
+
+const  AddRecipePage = () => {
+    useProtectedPage()
+
     return (
         <div>
             <h1>AddFeedPage</h1>
@@ -8,4 +12,4 @@ const  AddFeedPage = () => {
     )
 }
 
-export default AddFeedPage
+export default AddRecipePage
