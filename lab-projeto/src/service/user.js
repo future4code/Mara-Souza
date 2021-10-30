@@ -20,7 +20,7 @@ export const signUp = (body, clear, history) => {
       clear()
       goToRecipeList(history)
   }) 
-  .catch((err)=> alert("Erro no Cadastro"))
+  .catch((err)=> alert(err.response.data.message))
 }
 
 

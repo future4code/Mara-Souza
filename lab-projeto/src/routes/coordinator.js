@@ -9,7 +9,7 @@ export const goToSignUp = (history) => {
 }
 
 export const goToRecipePage = (history) => {
-    history.push("/")
+    history.push("/Feed")
 }
 
 export const goToRecipeDetail = (history, id) => {
@@ -17,8 +17,8 @@ export const goToRecipeDetail = (history, id) => {
 }
 
 export const goToRecipeList = (history) => {
-    history.push("/feed")
+    history.push("/")
 }
 
-export default coordinator
+
 
