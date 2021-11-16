@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "echo 'helo world'",
+    "paises": "open paises.js",
+    "country": "open index.js"
+
+  },
+  "dependencies": {
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "styled-components": "^5.3.3"
+  },
+  "name": "mara-souza",
+  "description": "Alunos(as), sejam bem-vindos(as)!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/Mara-Souza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/Mara-Souza/issues"
+  },
+  "homepage": "https://github.com/future4code/Mara-Souza#readme"
+}
